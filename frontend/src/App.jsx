@@ -50,6 +50,7 @@ function App() {
       setCurrentConversationId(newConv.id);
     } catch (error) {
       console.error('Failed to create conversation:', error);
+      alert('Failed to create conversation: ' + error.message);
     }
   };
 
